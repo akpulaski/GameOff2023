@@ -4,6 +4,10 @@ enum TURNSTATES{
 	PLAYER,
 	ENEMY
 }
+var MAX_ENEMIES = 3
+var enemyAmount = 0
+var enemypositions = []
+var possiblePositions = [Vector2(500,540),Vector2(700,540),Vector2(900,540)]
 var turnState:
 	set(value):
 		turnState=value
@@ -14,8 +18,8 @@ var turnState:
 				pass
 			#on enemy turn, call functions/stuff
 			TURNSTATES.ENEMY:
+				get_tree().call_group("enemies","on_turn_change")
 				spawnEnemy(1,0)
-				#find way to call the on_turn_change of every active enemy
 				print("ENEMY TURN START")
 				pass
 	get:
@@ -45,13 +49,25 @@ func _changeTurn():
 # Called when the node enters the scene tree for the first time.
 func spawnEnemy(amount,_type):
 	for i in amount:
-		var enemy = load("res://enemy.tscn").instantiate()
-		add_child(enemy)
-		enemy.position = Vector2(randi_range(300,500),randi_range(300,500))
+		if enemyAmount<MAX_ENEMIES:
+			enemyAmount+=1
+			var enemy = load("res://enemy.tscn").instantiate()
+			add_child(enemy)
+			print(enemyAmount)
+			for j in MAX_ENEMIES:
+				if not enemypositions[j].occupied:
+					enemy.position = enemypositions[j].coords
+					enemypositions[j].occupied = true
+					break
+					
 func _ready():
 	$UI.get_node("HealthBar").max_value=MAX_PLAYER_HP
 	PlayerHP = MAX_PLAYER_HP
 	turnState = TURNSTATES.PLAYER
+	for i in MAX_ENEMIES:
+		enemypositions.append(EnemyPos.new()) 
+		enemypositions[i].coords=possiblePositions[i]
+		print(enemypositions[i].coords)
 	
 	pass # Replace with function body.
 

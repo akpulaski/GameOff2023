@@ -21,6 +21,8 @@ var Patience:
 func _ready():
 	$HungerMeter.max_value=MAX_HUNGER
 	$PatienceMeter.max_value=MAX_PATIENCE
+	Hunger=0
+	Patience=MAX_PATIENCE
 	pass # Replace with function body.
 
 func on_turn_change():
