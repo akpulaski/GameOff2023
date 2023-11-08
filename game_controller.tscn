@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc8p8efk37x2m"]
+
+[ext_resource type="Script" path="res://GameController.gd" id="1_8dxw5"]
+
+[node name="GameController" type="Node2D"]
+script = ExtResource("1_8dxw5")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+
+[node name="HealthBar" type="ProgressBar" parent="UI"]
+layout_mode = 0
+offset_right = 220.0
+offset_bottom = 30.0
+show_percentage = false
+
+[node name="L1" type="Label" parent="UI/HealthBar"]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 3.0
+offset_right = 126.0
+offset_bottom = 26.0
+
+[node name="Label2" type="Label" parent="UI/HealthBar"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 31.0
+offset_right = 42.0
+offset_bottom = 54.0
+text = "Health"
+
+[node name="Button" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 268.0
+offset_right = 849.0
+offset_bottom = 299.0
+text = "NEXT TURN"
+
+[connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]
