@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://hll3thxt6x8g"]
+
+[ext_resource type="PackedScene" uid="uid://cjb1m1tdw4fmd" path="res://deck.tscn" id="1_48tjk"]
+[ext_resource type="Script" path="res://MainCard.gd" id="1_o55ye"]
+
+[node name="MainCard" type="Node"]
+script = ExtResource("1_o55ye")
+
+[node name="CardController" type="Node" parent="."]
+
+[node name="Deck" parent="CardController" instance=ExtResource("1_48tjk")]
