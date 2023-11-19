@@ -19,12 +19,12 @@ curve = SubResource("Curve2D_iy1tt")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 position = Vector2(435.042, 603.474)
-rotation = -0.00723451
+rotation = -0.00723246
 progress = 45.05
 
-[node name="Marker2D" type="Marker2D" parent="Path2D/PathFollow2D"]
+[node name="DeckSpawner" type="Marker2D" parent="Path2D/PathFollow2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Marker2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/DeckSpawner"]
 position = Vector2(-30.3919, -123.326)
 scale = Vector2(0.525127, 2.92698)
 texture = ExtResource("1_icoly")
