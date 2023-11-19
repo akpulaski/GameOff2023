@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://bppvrpmt1djlq"]
+[gd_scene load_steps=6 format=3 uid="uid://bppvrpmt1djlq"]
 
+[ext_resource type="Script" path="res://game.gd" id="1_2cw2s"]
 [ext_resource type="Texture2D" uid="uid://dk8p1i0bcvwv0" path="res://assets/bg.jpg" id="1_qjjnf"]
 [ext_resource type="PackedScene" uid="uid://da3mqux0w44c4" path="res://game_controller.tscn" id="2_nn6hy"]
 [ext_resource type="PackedScene" uid="uid://ba773rpo1rojp" path="res://enemy.tscn" id="3_eqitn"]
+[ext_resource type="FontFile" uid="uid://cx1m2pgcbcdye" path="res://assets/fonts/Kenney Pixel Square.ttf" id="5_b7384"]
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_2cw2s")
 
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1280.0
@@ -14,3 +17,20 @@ texture = ExtResource("1_qjjnf")
 [node name="GameController" parent="." instance=ExtResource("2_nn6hy")]
 
 [node name="Enemy" parent="." instance=ExtResource("3_eqitn")]
+
+[node name="QuitFullGame" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1197.0
+offset_top = 15.0
+offset_right = 1247.0
+offset_bottom = 46.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_b7384")
+text = "Quit"
+
+[connection signal="pressed" from="QuitFullGame" to="." method="_on_quit_full_game_pressed"]
