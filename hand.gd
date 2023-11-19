@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var Deck = get_node("res://deck.tscn")
+@onready var Deck = get_node("../Deck")
 
 var hand = []
 var cardpath = "res://assets/Cards/"
@@ -19,6 +19,7 @@ func sprite_cards():
 	var secondpart
 	var fullpart
 	for i in hand.size():
+#		hand[i].cardscale = cardscale
 		hand[i].cardscale = cardscale
 		fullpart = ""
 		if hand[i].cardsuit == "spade":
@@ -62,9 +63,9 @@ func place_cards():
 		add_child(hand[i])
 
 		space = path_length
-		$Path2D/PathFollow2D.offset = 0.0
+		$Path2D/PathFollow2D.progress = 0.0
 		if hand_width < path_length:
-			$Path2D/PathFollow2D.offset = (space - hand_width)/2
+			$Path2D/PathFollow2D.progress = (space - hand_width)/2
 
 			print("ideal cardwidth space: " + str(ideal_cardwidth))
 		else:
@@ -73,14 +74,14 @@ func place_cards():
 		
 		for card in hand.size():
 			if !hand[card].dealt:
-				hand[card].position = $DeckLocation.position
+				hand[card].position = $DeckPosition.position
 			hand[card].handposition = $Path2D/PathFollow2D/DeckSpawner.get_global_position()
 			hand[card].handrotation = $Path2D/PathFollow2D/DeckSpawner.get_global_transform().get_rotation()
 			hand[card].move_card(hand[card].handposition, hand[card].handrotation)
 			hand[card].dealt = true
 
-			$Path2D/PathFollow2D.offset += ideal_cardwidth
-		$Path2D/PathFollow2D.offset = 0.0
+			$Path2D/PathFollow2D.progress += ideal_cardwidth
+		$Path2D/PathFollow2D.progress = 0.0
 func _ready():
 	pass # Replace with function body.
 
