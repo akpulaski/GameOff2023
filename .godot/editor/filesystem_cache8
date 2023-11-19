@@ -1,29 +1,29 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700416371
+::res://::1700431187
 bg.tscn::PackedScene::3391058935840413293::1700383745::0::1::::<><>::
-Card.gd::GDScript::-1::1700377406::0::1::::<>Area2D<>::
-Card.tscn::PackedScene::3437244696741215670::1700382450::0::1::::<><>::res://Card.gd<>uid://omibp2wjvmuk::::res://assets/Cards/Card.png
+Card.gd::GDScript::-1::1700429487::0::1::::<>Area2D<>::
+Card.tscn::PackedScene::3437244696741215670::1700430678::0::1::::<><>::res://Card.gd<>uid://omibp2wjvmuk::::res://assets/Cards/Card.png
 deck.gd::GDScript::-1::1700380995::0::1::::<>Node<>::
-deck.tscn::PackedScene::5408206804346579479::1700383709::0::1::::<><>::res://deck.gd
+deck.tscn::PackedScene::5408206804346579479::1700430678::0::1::::<><>::res://deck.gd
 Enemy.gd::GDScript::-1::1700081727::0::1::::<>Node2D<>::
-enemy.tscn::PackedScene::2454474634561421857::1700375485::0::1::::<><>::res://Enemy.gd<>uid://5018sseug3hh::::res://icon.svg
+enemy.tscn::PackedScene::2454474634561421857::1700375485::0::1::::<><>::res://Enemy.gd<>uid://5018sseug3hh
 EnemyPosition.gd::GDScript::-1::1700081727::0::1::::EnemyPos<>RefCounted<>::
 game.gd::GDScript::-1::1700375482::0::1::::<>Node2D<>::
-game.tscn::PackedScene::3471525227205014082::1700383709::0::1::::<><>::res://game.gd<>uid://dk8p1i0bcvwv0::::res://assets/bg.jpg<>uid://da3mqux0w44c4::::res://game_controller.tscn<>uid://ba773rpo1rojp::::res://enemy.tscn<>uid://cx1m2pgcbcdye::::res://assets/fonts/Kenney Pixel Square.ttf
+game.tscn::PackedScene::3471525227205014082::1700383709::0::1::::<><>::res://game.gd<>uid://dk8p1i0bcvwv0
 GameController.gd::GDScript::-1::1700081727::0::1::::<>Node2D<>::
 game_controller.tscn::PackedScene::7217822891972615677::1700081727::0::1::::<><>::res://GameController.gd
-hand.gd::GDScript::-1::1700383441::0::1::::<>Node2D<>::
-hand.tscn::PackedScene::1976950465019195440::1700383709::0::1::::<><>::res://hand.gd<>uid://5018sseug3hh::::res://icon.svg
+hand.gd::GDScript::-1::1700424653::0::1::::<>Node2D<>::
+hand.tscn::PackedScene::1976950465019195440::1700430678::0::1::::<><>::res://hand.gd<>uid://5018sseug3hh::::res://icon.svg
 icon.svg::CompressedTexture2D::2158913299438774485::1700081727::1700375639::1::::<><>::
-MainCard.gd::GDScript::-1::1700378397::0::1::::<>Node<>::
-MainCard.tscn::PackedScene::514748959739587340::1700382450::0::1::::<><>::uid://cjb1m1tdw4fmd::::res://deck.tscn<>res://MainCard.gd
+MainCard.gd::GDScript::-1::1700430677::0::1::::<>Node<>::
+MainCard.tscn::PackedScene::514748959739587340::1700430677::0::1::::<><>::uid://cjb1m1tdw4fmd::::res://deck.tscn<>res://MainCard.gd<>uid://3fwc5vr6clxw::::res://hand.tscn
 README.md::TextFile::-1::1700081727::0::1::::<><>::
 StartMenu.gd::GDScript::-1::1700383662::0::1::::<>Control<>::
-StartMenu.tscn::PackedScene::710277169734977349::1700383709::0::1::::<><>::res://StartMenu.gd<>uid://bokwilqwgvm1b::::res://bg.tscn<>uid://cx1m2pgcbcdye::::res://assets/fonts/Kenney Pixel Square.ttf
-::res://assets/::1700381888
+StartMenu.tscn::PackedScene::710277169734977349::1700430677::0::1::::<><>::res://StartMenu.gd<>uid://bokwilqwgvm1b::::res://bg.tscn<>uid://cx1m2pgcbcdye::::res://assets/fonts/Kenney Pixel Square.ttf
+::res://assets/::1700416372
 bg.jpg::CompressedTexture2D::7930232597732495075::1700081727::1700416372::1::::<><>::
 pixelCardAssest_V01.png::CompressedTexture2D::2664009301126077311::1700373366::1700416372::1::::<><>::
-::res://assets/Cards/::1700381903
+::res://assets/Cards/::1700416372
 Card.png::CompressedTexture2D::1007904696289624986::1598641758::1700416372::1::::<><>::
 Card_Back1.png::CompressedTexture2D::3585090580069246636::1598641758::1700416372::1::::<><>::
 Card_Back2.png::CompressedTexture2D::7254525418258119893::1598641758::1700416372::1::::<><>::
@@ -80,5 +80,5 @@ Spades_Ace.png::CompressedTexture2D::2721715834603872089::1598641758::1700416372
 Spades_Jack.png::CompressedTexture2D::5474037141475771217::1598641758::1700416372::1::::<><>::
 Spades_King.png::CompressedTexture2D::4332841262448092256::1598641758::1700416372::1::::<><>::
 Spades_Queen.png::CompressedTexture2D::4755884051808154467::1598641758::1700416372::1::::<><>::
-::res://assets/fonts/::1700375639
+::res://assets/fonts/::1700416372
 Kenney Pixel Square.ttf::FontFile::6441636210226499616::1700373612::1700416372::1::::<><>::

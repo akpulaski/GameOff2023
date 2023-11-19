@@ -31,23 +31,21 @@ var handposition = Vector2.ZERO
 var handrotation = Vector2.ZERO
 
 func move_card(dest, rotate = null, _scale = null):
-		tween_node =get_tree().create_tween()
-		print(get_tree())
-		print(tween_node)
-#		$Tween.interpolate_property(self, "position" , position, dest, 0.5, Tween.TRANS_BACK, Tween.EASE_OUT)
-#		if (tween_node.is_active() == false):
-#		var tween: Tween = create_tween()
-		tween_node.tween_property(self, "position" , position, 0.5)
+		var tween = create_tween();
+#        $Tween.interpolate_property(self, "position" , position, dest, 0.5, Tween.TRANS_BACK, Tween.EASE_OUT)
+#        if (tween_node.is_active() == false):
+#        var tween: Tween = create_tween()
+		tween.tween_property(self, "position" , dest, 0.5)
 		if rotate != null:
-#			$Tween.interpolate_property(self, "rotation", rotation, rotate, 0.2, Tween.TRANS_LINEAR, Tween.EASE_IN)
-			tween_node.tween_property(self, "rotation", rotation, 0.2)
+#            $Tween.interpolate_property(self, "rotation", rotation, rotate, 0.2, Tween.TRANS_LINEAR, Tween.EASE_IN)
+			tween.tween_property(self, "rotation", rotate, 0.2)
 		if _scale != null:
-#			$Tween.interpolate_property(self, "scale", scale, _scale, 0.5, Tween.TRANS_BACK, Tween.EASE_OUT)
-			tween_node.tween_property(self, "scale", scale, 0.5)
-		tween_node.play()
-#		$Tween.start()
-#		tween_node.start()
-#		tween_node.tween_property()
+#            $Tween.interpolate_property(self, "scale", scale, _scale, 0.5, Tween.TRANS_BACK, Tween.EASE_OUT)
+			tween.tween_property(self, "scale", scale, 0.5)
+		tween.play()
+#        $Tween.start()
+#        tween_node.start()
+#        tween_node.tween_property()
 
 
 

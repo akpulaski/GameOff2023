@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://3fwc5vr6clxw"]
+[gd_scene load_steps=3 format=3 uid="uid://3fwc5vr6clxw"]
 
 [ext_resource type="Script" path="res://hand.gd" id="1_g2216"]
-[ext_resource type="Texture2D" uid="uid://5018sseug3hh" path="res://icon.svg" id="1_icoly"]
 
 [sub_resource type="Curve2D" id="Curve2D_iy1tt"]
 _data = {
@@ -27,6 +26,5 @@ progress = 45.05
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/DeckSpawner"]
 position = Vector2(-30.3919, -123.326)
 scale = Vector2(0.525127, 2.92698)
-texture = ExtResource("1_icoly")
 
 [node name="DeckPosition" type="Marker2D" parent="."]
