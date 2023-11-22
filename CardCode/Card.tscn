@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgxn8da4vwjqx"]
+
+[ext_resource type="Texture2D" uid="uid://bn5e0q05ddd2s" path="res://assets/yellowcard.png" id="1_d0jxt"]
+[ext_resource type="FontFile" uid="uid://cx1m2pgcbcdye" path="res://assets/fonts/Kenney Pixel Square.ttf" id="2_fw0ur"]
+[ext_resource type="Texture2D" uid="uid://dmh2613tm3rtp" path="res://assets/random.png" id="3_wndcg"]
+
+[node name="Card" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 247.0
+offset_bottom = 326.0
+
+[node name="CardArt" type="TextureRect" parent="PanelContainer"]
+layout_mode = 2
+texture = ExtResource("1_d0jxt")
+
+[node name="Control" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="CardName" type="Label" parent="PanelContainer/Control"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fw0ur")
+theme_override_font_sizes/font_size = 35
+text = "card name"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Control"]
+custom_minimum_size = Vector2(35, 31)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(31, 35)
+layout_mode = 2
+texture = ExtResource("3_wndcg")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/Control"]
+layout_mode = 2
+
+[node name="Cost" type="Label" parent="PanelContainer/Control/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fw0ur")
+text = "3"
+
+[node name="Type" type="Label" parent="PanelContainer/Control/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fw0ur")
+text = "type"
+
+[node name="Power" type="Label" parent="PanelContainer/Control/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fw0ur")
+text = "5"
