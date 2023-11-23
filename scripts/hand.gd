@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var Deck = get_node("../Deck")
+@onready var Deck = get_node("Deck")
 
 var hand = []
 var cardpath = "res://assets/Cards/"

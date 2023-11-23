@@ -3,6 +3,8 @@ extends Node
 @onready var Deck = $CardController/Deck
 @onready var Player = $CardController/PlayerHand
 
+@onready var NewCards = preload("res://scenes/card_spawner.tscn")
+
 var card = []
 
 # Called when the node enters the scene tree for the first time.

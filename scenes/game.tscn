@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://bppvrpmt1djlq"]
 
-[ext_resource type="Script" path="res://game.gd" id="1_2cw2s"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_2cw2s"]
 [ext_resource type="Texture2D" uid="uid://dk8p1i0bcvwv0" path="res://assets/bg.jpg" id="1_qjjnf"]
-[ext_resource type="PackedScene" uid="uid://da3mqux0w44c4" path="res://game_controller.tscn" id="2_nn6hy"]
-[ext_resource type="PackedScene" uid="uid://ba773rpo1rojp" path="res://enemy.tscn" id="3_eqitn"]
+[ext_resource type="PackedScene" uid="uid://da3mqux0w44c4" path="res://scenes/game_controller.tscn" id="2_nn6hy"]
+[ext_resource type="PackedScene" uid="uid://ba773rpo1rojp" path="res://scenes/enemy.tscn" id="3_eqitn"]
 [ext_resource type="FontFile" uid="uid://cx1m2pgcbcdye" path="res://assets/fonts/Kenney Pixel Square.ttf" id="5_b7384"]
 
 [node name="Game" type="Node2D"]

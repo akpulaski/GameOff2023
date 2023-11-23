@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://kecfqmknjsqf"]
 
-[ext_resource type="Script" path="res://StartMenu.gd" id="1_6is83"]
-[ext_resource type="PackedScene" uid="uid://bokwilqwgvm1b" path="res://bg.tscn" id="1_pg8tp"]
-[ext_resource type="FontFile" uid="uid://cx1m2pgcbcdye" path="res://assets/fonts/Kenney Pixel Square.ttf" id="2_hq1mw"]
+[ext_resource type="Script" path="res://scripts/StartMenu.gd" id="1_7jbjl"]
+[ext_resource type="PackedScene" uid="uid://bokwilqwgvm1b" path="res://scenes/bg.tscn" id="2_lhiuy"]
+[ext_resource type="FontFile" uid="uid://cx1m2pgcbcdye" path="res://assets/fonts/Kenney Pixel Square.ttf" id="3_e44qa"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vnw0h"]
-font = ExtResource("2_hq1mw")
+font = ExtResource("3_e44qa")
 font_size = 80
 font_color = Color(0.14902, 0.729412, 1, 1)
 outline_size = 5
@@ -19,9 +19,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6is83")
+script = ExtResource("1_7jbjl")
 
-[node name="bg" parent="." instance=ExtResource("1_pg8tp")]
+[node name="bg" parent="." instance=ExtResource("2_lhiuy")]
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 1
@@ -53,7 +53,7 @@ offset_right = 123.0
 offset_bottom = 42.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_hq1mw")
+theme_override_fonts/font = ExtResource("3_e44qa")
 theme_override_font_sizes/font_size = 35
 text = "Start"
 
@@ -70,7 +70,7 @@ offset_right = 74.0
 offset_bottom = 138.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_hq1mw")
+theme_override_fonts/font = ExtResource("3_e44qa")
 theme_override_font_sizes/font_size = 20
 text = "Quit
 "
@@ -81,7 +81,7 @@ offset_left = 516.0
 offset_top = 529.0
 offset_right = 748.0
 offset_bottom = 594.0
-theme_override_fonts/font = ExtResource("2_hq1mw")
+theme_override_fonts/font = ExtResource("3_e44qa")
 theme_override_font_sizes/font_size = 20
 text = "Test Cards"
 

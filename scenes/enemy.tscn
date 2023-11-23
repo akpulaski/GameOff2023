@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ba773rpo1rojp"]
 
-[ext_resource type="Script" path="res://Enemy.gd" id="1_mnssy"]
+[ext_resource type="Script" path="res://scripts/Enemy.gd" id="1_lvq56"]
 [ext_resource type="Texture2D" uid="uid://5018sseug3hh" path="res://icon.svg" id="2_8cdnt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wi1w1"]
@@ -11,7 +11,7 @@ bg_color = Color(0.239216, 0.627451, 0.92549, 1)
 
 [node name="Enemy" type="Node2D" groups=["enemies"]]
 position = Vector2(116, 157)
-script = ExtResource("1_mnssy")
+script = ExtResource("1_lvq56")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_8cdnt")

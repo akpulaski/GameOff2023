@@ -51,7 +51,7 @@ func spawnEnemy(amount,_type):
 	for i in amount:
 		if enemyAmount<MAX_ENEMIES:
 			enemyAmount+=1
-			var enemy = load("res://enemy.tscn").instantiate()
+			var enemy = load("res://scenes/enemy.tscn").instantiate()
 			add_child(enemy)
 			print(enemyAmount)
 			for j in MAX_ENEMIES:
