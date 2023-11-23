@@ -21,4 +21,5 @@ func _on_quit_button_pressed():
 
 
 func _on_test_cards_pressed():
-	get_tree().change_scene_to_file("res://scenes/MainCard.tscn")
+#	get_tree().change_scene_to_file("res://scenes/MainCard.tscn")
+	get_tree().change_scene_to_file("res://scenes/card_spawner.tscn")

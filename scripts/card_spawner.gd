@@ -20,6 +20,12 @@ func _ready():
 	add_child(Deck)
 	draw_cards(1)
 	draw_cards(1)
+	draw_cards(1)
+	draw_cards(1)
+	draw_cards(1)
+	draw_cards(1)
+	draw_cards(1)
+#	draw_cards(7)
 	pass # Replace with function body.
 
 
@@ -32,8 +38,12 @@ func _on_timer_timeout():
 	spawn_cards()
 func draw_cards(num):
 	hand += Deck.give_cards(num)
-	sprite_cards()
-	spawn_cards()
+#	for each in hand:
+#		sprite_cards()
+#		spawn_cards()
+	for each in hand:
+		sprite_cards()
+		spawn_current_card(each)
 
 func sprite_cards():
 	var firstpart
@@ -81,6 +91,13 @@ func spawn_cards():
 #		hand[i].global_position =  Vector2(406,647)
 		hand[i].global_position =  random_card_position.global_position
 		add_child(hand[i])
+#	add_child(card_instance)
+	pass
+func spawn_current_card(single_card):
+	var card_positions_array = card_positions.get_children()
+	var random_card_position = card_positions_array.pick_random()
+	single_card.global_position =  random_card_position.global_position
+	add_child(single_card)
 #	add_child(card_instance)
 	pass
 	
