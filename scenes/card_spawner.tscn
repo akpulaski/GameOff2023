@@ -1,3 +1,34 @@
-[gd_scene format=3 uid="uid://c47wgt7x3p485"]
+[gd_scene load_steps=2 format=3 uid="uid://c47wgt7x3p485"]
+
+[ext_resource type="Script" path="res://scripts/card_spawner.gd" id="1_7dy5v"]
 
 [node name="CardSpawner" type="Node2D"]
+script = ExtResource("1_7dy5v")
+
+[node name="Spawn_Positions" type="Node2D" parent="."]
+
+[node name="SpawnPos_01" type="Marker2D" parent="Spawn_Positions"]
+position = Vector2(406, 647)
+
+[node name="SpawnPos_02" type="Marker2D" parent="Spawn_Positions"]
+position = Vector2(496, 647)
+
+[node name="SpawnPos_03" type="Marker2D" parent="Spawn_Positions"]
+position = Vector2(586, 647)
+
+[node name="SpawnPos_04" type="Marker2D" parent="Spawn_Positions"]
+position = Vector2(676, 647)
+
+[node name="SpawnPos_05" type="Marker2D" parent="Spawn_Positions"]
+position = Vector2(766, 647)
+
+[node name="SpawnPos_06" type="Marker2D" parent="Spawn_Positions"]
+position = Vector2(856, 647)
+
+[node name="SpawnPos_07" type="Marker2D" parent="Spawn_Positions"]
+position = Vector2(946, 647)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
