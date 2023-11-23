@@ -49,7 +49,7 @@ func give_cards(num):
 	return cardreturn
 
 func make_deck():
-	var cardscene = load("res://Card.tscn")
+	var cardscene = load("res://scenes/Card.tscn")
 	var card
 	for i in card_names.size():
 		card = cardscene.instantiate()

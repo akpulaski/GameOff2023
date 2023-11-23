@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://3fwc5vr6clxw"]
 
-[ext_resource type="Script" path="res://hand.gd" id="1_g2216"]
+[ext_resource type="Script" path="res://scripts/hand.gd" id="1_fqkrb"]
 
 [sub_resource type="Curve2D" id="Curve2D_iy1tt"]
 _data = {
@@ -9,7 +9,7 @@ _data = {
 point_count = 2
 
 [node name="Hand" type="Node2D"]
-script = ExtResource("1_g2216")
+script = ExtResource("1_fqkrb")
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(0, 427.352)
