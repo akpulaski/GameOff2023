@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c47wgt7x3p485"]
+[gd_scene load_steps=3 format=3 uid="uid://c47wgt7x3p485"]
 
 [ext_resource type="Script" path="res://scripts/card_spawner.gd" id="1_7dy5v"]
+[ext_resource type="FontFile" uid="uid://cx1m2pgcbcdye" path="res://assets/fonts/Kenney Pixel Square.ttf" id="2_usxyt"]
 
 [node name="CardSpawner" type="Node2D"]
 script = ExtResource("1_7dy5v")
@@ -8,27 +9,61 @@ script = ExtResource("1_7dy5v")
 [node name="Spawn_Positions" type="Node2D" parent="."]
 
 [node name="SpawnPos_01" type="Marker2D" parent="Spawn_Positions"]
-position = Vector2(406, 647)
+position = Vector2(407, 643)
 
 [node name="SpawnPos_02" type="Marker2D" parent="Spawn_Positions"]
-position = Vector2(496, 647)
+position = Vector2(497, 643)
 
 [node name="SpawnPos_03" type="Marker2D" parent="Spawn_Positions"]
-position = Vector2(586, 647)
+position = Vector2(578, 645)
 
 [node name="SpawnPos_04" type="Marker2D" parent="Spawn_Positions"]
-position = Vector2(676, 647)
+position = Vector2(677, 643)
 
 [node name="SpawnPos_05" type="Marker2D" parent="Spawn_Positions"]
-position = Vector2(766, 647)
+position = Vector2(767, 643)
 
 [node name="SpawnPos_06" type="Marker2D" parent="Spawn_Positions"]
-position = Vector2(856, 647)
+position = Vector2(857, 643)
 
 [node name="SpawnPos_07" type="Marker2D" parent="Spawn_Positions"]
-position = Vector2(946, 647)
+position = Vector2(947, 643)
+
+[node name="Prepare_Positions" type="Node2D" parent="."]
+
+[node name="PreparePos_01" type="Marker2D" parent="Prepare_Positions"]
+position = Vector2(1105, 533)
+
+[node name="PreparePos_02" type="Marker2D" parent="Prepare_Positions"]
+position = Vector2(1146, 535)
+
+[node name="PreparePos_03" type="Marker2D" parent="Prepare_Positions"]
+position = Vector2(1191, 534)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StockKitchenButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 627.0
+offset_right = 201.0
+offset_bottom = 659.0
+theme_override_fonts/font = ExtResource("2_usxyt")
+text = "Stock Kitchen"
+
+[node name="MustCookLabel" type="Label" parent="."]
+offset_left = 1027.0
+offset_top = 424.0
+offset_right = 1067.0
+offset_bottom = 447.0
+theme_override_fonts/font = ExtResource("2_usxyt")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Control/StockKitchenButton" to="." method="_on_stock_kitchen_button_pressed"]
