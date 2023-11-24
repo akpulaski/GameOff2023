@@ -64,6 +64,7 @@ offset_top = 424.0
 offset_right = 1067.0
 offset_bottom = 447.0
 theme_override_fonts/font = ExtResource("2_usxyt")
+theme_override_font_sizes/font_size = 20
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Control/StockKitchenButton" to="." method="_on_stock_kitchen_button_pressed"]
