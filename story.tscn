@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://bplhcude6uohe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nal4d"]
+font_size = 22
+
+[node name="Story" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -130.0
+offset_top = 6.0
+offset_right = 4252.0
+offset_bottom = 2940.0
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 158.0
+offset_top = -1469.0
+offset_right = 1080.0
+offset_bottom = -247.0
+grow_vertical = 2
+text = "
+The story takes place in a city called Mudopolis where the Mudans live. The Mudans are a species of shapeshifters that turn into monsters when they get too hungry. This is why their ancestors were banished to another dimension. As long as their abilities relied solely on emotion and physical urges, such as hunger, the Mudans would be doomed to remain in Mudopolis.  
+
+Until then, the Mudans still need to be fed. 
+
+This is the responsibility of the restaurants in the city. They need to keep the Mudans nice and fed in order to keep the peace. If they succeed, they receive fame and fortune. If they fail, hangry Mudans will destroy their restaurant with impunity. 
+
+One of these restaurants is called Para’s Edge where the chef, Para, and her waiter, Aboboris, serve Mudans in the area. 
+
+Help Para and Aboboris serve as many customers as you can during the dinner rush and ensure that not too many Mudans get hungry. Otherwise they’ll destroy the restaurant. The more people you serve, the more points and cards you’ll get.
+
+Good luck!"
+label_settings = SubResource("LabelSettings_nal4d")
+autowrap_mode = 2
