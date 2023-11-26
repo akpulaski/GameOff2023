@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://cutapcqi3sjyu"]
+
+[ext_resource type="Texture2D" uid="uid://c4o7fneywj01e" path="res://assets/fonts/Shrimp-Beta.jpg" id="1_hleb1"]
+[ext_resource type="Texture2D" uid="uid://cj2jfqs1t72dq" path="res://assets/fonts/Pepper-Beta.jpg" id="2_yv41b"]
+[ext_resource type="Texture2D" uid="uid://dcf8kdau82r3m" path="res://assets/fonts/Sugar-Beta.jpg" id="3_4c1le"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vrdco"]
+font_size = 39
+
+[node name="Game Progression" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 1738.0
+offset_bottom = 1736.0
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 9.0
+offset_top = 4.0
+offset_right = 1171.0
+offset_bottom = 873.0
+text = "
+
+
+
+The customers have been served. 
+You've earned 3 cards."
+label_settings = SubResource("LabelSettings_vrdco")
+horizontal_alignment = 1
+
+[node name="Shrimp-beta" type="Sprite2D" parent="."]
+position = Vector2(227, 573)
+scale = Vector2(0.0959677, 0.0746864)
+texture = ExtResource("1_hleb1")
+
+[node name="Pepper-beta" type="Sprite2D" parent="."]
+position = Vector2(533, 571)
+scale = Vector2(0.104032, 0.0735462)
+texture = ExtResource("2_yv41b")
+
+[node name="Sugar-beta" type="Sprite2D" parent="."]
+position = Vector2(868, 573)
+scale = Vector2(0.122581, 0.0752565)
+texture = ExtResource("3_4c1le")

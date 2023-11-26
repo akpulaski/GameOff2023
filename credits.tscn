@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcebn588410f6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uxyha"]
+font_size = 62
+
+[sub_resource type="LabelSettings" id="LabelSettings_evtcm"]
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_3pm0o"]
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_eip4j"]
+font_size = 40
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1106.0
+offset_bottom = 1576.0
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 34.0
+offset_top = -216.0
+offset_right = 1070.0
+offset_bottom = 496.0
+text = "Credits"
+label_settings = SubResource("LabelSettings_uxyha")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = 228.0
+offset_right = 1219.0
+offset_bottom = 597.0
+text = "Main Programmers- Afuera, Yellow Prince Games, Luka"
+label_settings = SubResource("LabelSettings_evtcm")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 394.0
+offset_right = 1056.0
+offset_bottom = 529.0
+text = "Story/Card Design/Programmer- Profe de Jocs"
+label_settings = SubResource("LabelSettings_3pm0o")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 560.0
+offset_right = 1110.0
+offset_bottom = 633.0
+text = "Card Design/Descriptions/Dialogue- Eris"
+label_settings = SubResource("LabelSettings_eip4j")
+horizontal_alignment = 1
