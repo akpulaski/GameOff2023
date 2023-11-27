@@ -1,10 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cutapcqi3sjyu"]
+[gd_scene load_steps=6 format=3 uid="uid://cutapcqi3sjyu"]
 
 [ext_resource type="Texture2D" uid="uid://c4o7fneywj01e" path="res://assets/fonts/Shrimp-Beta.jpg" id="1_hleb1"]
+[ext_resource type="FontFile" uid="uid://cx1m2pgcbcdye" path="res://assets/fonts/Kenney Pixel Square.ttf" id="1_k0gh0"]
 [ext_resource type="Texture2D" uid="uid://cj2jfqs1t72dq" path="res://assets/fonts/Pepper-Beta.jpg" id="2_yv41b"]
 [ext_resource type="Texture2D" uid="uid://dcf8kdau82r3m" path="res://assets/fonts/Sugar-Beta.jpg" id="3_4c1le"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vrdco"]
+font = ExtResource("1_k0gh0")
 font_size = 39
 
 [node name="Game Progression" type="Control"]

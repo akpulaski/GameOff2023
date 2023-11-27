@@ -1,9 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700955555
+::res://::1701124880
+credits.tscn::PackedScene::7307982809903360941::1700957531::0::1::::<><>::
+game_progression.tscn::PackedScene::6215868334547749432::1700957534::0::1::::<><>::uid://c4o7fneywj01e::::res://assets/fonts/Shrimp-Beta.jpg<>uid://cj2jfqs1t72dq::::res://assets/fonts/Pepper-Beta.jpg<>uid://dcf8kdau82r3m::::res://assets/fonts/Sugar-Beta.jpg
 icon.svg::CompressedTexture2D::2158913299438774485::1700930102::1700930102::1::::<><>::
 README.md::TextFile::-1::1700930102::0::1::::<><>::
-game_progression.tscn::PackedScene::6215868334547749432::1700955555::0::1::::<><>::uid://c4o7fneywj01e::::res://assets/fonts/Shrimp-Beta.jpg<>uid://cj2jfqs1t72dq::::res://assets/fonts/Pepper-Beta.jpg
-story.tscn::PackedScene::3462391139420806138::1700955555::0::1::::<><>::
+story.tscn::PackedScene::3462391139420806138::1700957538::0::1::::<><>::
 ::res://assets/::1700930426
 bg.jpg::CompressedTexture2D::7930232597732495075::1700930102::1700930426::1::::<><>::
 Food.png::CompressedTexture2D::5130490752496888860::1700930102::1700930426::1::::<><>::
@@ -68,14 +69,14 @@ Spades_Ace.png::CompressedTexture2D::2721715834603872089::1700930102::1700930426
 Spades_Jack.png::CompressedTexture2D::5474037141475771217::1700930102::1700930426::1::::<><>::
 Spades_King.png::CompressedTexture2D::4332841262448092256::1700930102::1700930426::1::::<><>::
 Spades_Queen.png::CompressedTexture2D::4755884051808154467::1700930102::1700930426::1::::<><>::
-::res://assets/fonts/::1700955610
+::res://assets/fonts/::1700955611
 Kenney Pixel Square.ttf::FontFile::6441636210226499616::1700930102::1700930426::1::::<><>::
 Pepper-Beta.jpg::CompressedTexture2D::5460835410780612434::1700955496::1700955497::1::::<><>::
 Shrimp-Beta.jpg::CompressedTexture2D::6839171684287032068::1700955378::1700955379::1::::<><>::
 Sugar-Beta.jpg::CompressedTexture2D::7311983304349948912::1700955610::1700955611::1::::<><>::
 ::res://CardCode/::1700930102
 Card.tscn::PackedScene::5242303528579213307::1700930102::0::1::::<><>::uid://bn5e0q05ddd2s
-::res://scenes/::1700955555
+::res://scenes/::1700957453
 bg.tscn::PackedScene::3391058935840413293::1700930102::0::1::::<><>::
 Card.tscn::PackedScene::3437244696741215670::1700930102::0::1::::<><>::res://scripts/Card.gd<>uid://omibp2wjvmuk
 card_spawner.tscn::PackedScene::6875725458083796108::1700930102::0::1::::<><>::res://scripts/card_spawner.gd<>uid://cx1m2pgcbcdye
@@ -86,7 +87,7 @@ game_controller.tscn::PackedScene::7217822891972615677::1700930102::0::1::::<><>
 hand.tscn::PackedScene::1976950465019195440::1700930102::0::1::::<><>::res://scripts/hand.gd
 MainCard.tscn::PackedScene::514748959739587340::1700930102::0::1::::<><>::uid://cjb1m1tdw4fmd
 PlayerHand2.gd::GDScript::-1::1700930102::0::1::::<>Node2D<>::
-StartMenu.tscn::PackedScene::710277169734977349::1700955555::0::1::::<><>::res://scripts/StartMenu.gd<>uid://bokwilqwgvm1b::::res://scenes/bg.tscn<>uid://cx1m2pgcbcdye::::res://assets/fonts/Kenney Pixel Square.ttf
+StartMenu.tscn::PackedScene::710277169734977349::1700957453::0::1::::<><>::res://scripts/StartMenu.gd<>uid://bokwilqwgvm1b::::res://scenes/bg.tscn<>uid://cx1m2pgcbcdye::::res://assets/fonts/Kenney Pixel Square.ttf
 table.tscn::PackedScene::26428502936931601::1700930102::0::1::::<><>::
 ::res://scripts/::1700930102
 Card.gd::GDScript::-1::1700930102::0::1::::<>Area2D<>::

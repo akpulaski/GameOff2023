@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bplhcude6uohe"]
+[gd_scene load_steps=3 format=3 uid="uid://bplhcude6uohe"]
+
+[ext_resource type="FontFile" uid="uid://cx1m2pgcbcdye" path="res://assets/fonts/Kenney Pixel Square.ttf" id="1_owgnv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nal4d"]
-font_size = 23
+font = ExtResource("1_owgnv")
+font_size = 19
 
 [node name="Story" type="Control"]
 layout_mode = 3
